@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    /* background-color: teal; */
+    color: black;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(143, 143, 202);
+    /* margin-bottom: 10px; */
+}
+
+.top_header {
+    width: 90%;
+    height: 100%;
+    /* background-color: #fff; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 10%;
+    height: 80%;
+    padding: 10px;
+    /* background-color: gray; */
+    /* border: 1px solid black; */
+}
+
+.logo h2 {
+    color: rgb(145, 30, 9);
+    font-size: 28px;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.logo h2::after {
+    content: " Bilashi";
+    font-size: 24px;
+    color: rgb(60, 10, 141);
+    text-align: right;
+}
+
+.menu_list {
+    width: 70%;
+    /* background-color: #fff; */
+}
+
+.menu_item {
+    width: 100%;
+    text-align: right;
+}
+
+.menu_item nav ul li {
+    /* width: 100%; */
+    display: inline-block;
+    padding: 15px 8px;
+    border-right: 1px solid black;
+}
+
+.menu_item nav ul li:hover {
+    background-color: rgba(209, 102, 223, 0.418);
+}
+
+.menu_item nav ul li:last-child:hover {
+    border-right: 1px solid black;
+}
+
+.menu_item nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px 10px;
+    color: black;
+}
+
+.menu_item nav ul li:last-child {
+    border-right: none;
+}
+
+.menu_item nav ul li a:hover {
+    color: #fff
+}
+
+main {
+    height: 300px;
+    background-image: linear-gradient(to right, blue, hotpink);
+}
+
+footer {
+    /* height: 100px; */
+    background-color: rgb(83, 83, 228);
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 12px;
+}
+
+footer small {
+    color: #fff
+}
+
+footer small span {
+    color: rgba(158, 34, 34, 0.945);
+    font-style: italic;
+}
