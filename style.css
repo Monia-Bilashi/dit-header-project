@@ -90,7 +90,7 @@ header {
 }
 
 main {
-    height: 300px;
+    height: 500px;
     background-image: linear-gradient(to right, blue, hotpink);
 }
 
@@ -109,4 +109,49 @@ footer small {
 footer small span {
     color: rgba(158, 34, 34, 0.945);
     font-style: italic;
+}
+
+
+/* for responsive  */
+
+@media only screen and (max-width: 600px) {
+    .top_header {
+        width: 90%;
+        height: 100%;
+        /* background-color: #fff; */
+        margin: auto;
+        display: flex;
+        flex-direction: raw;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    .menu_item nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px 5px;
+        color: black;
+        font-size: 10px;
+    }
+    .logo h2 {
+        color: rgb(145, 30, 9);
+        font-size: 24px;
+        font-style: italic;
+        padding-top: 10px;
+    }
+    .logo h2::after {
+        content: " Bilashi";
+        font-size: 20px;
+        color: rgb(60, 10, 141);
+        text-align: right;
+    }
+    .logo {
+        width: 10%;
+        height: 80%;
+        padding: 10px;
+    }
+    .menu_list {
+        width: 70%;
+        /* background-color: #fff; */
+    }
 }
